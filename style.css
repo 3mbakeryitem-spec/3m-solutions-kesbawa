@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-box {
+    max-width: 100%;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 5px 10px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul a:hover {
+  color: #ffcc00;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+form button {
+  background-color: gray;
+  border: none;
+  padding: 6px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero {
+  background-color: lightslategray;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.information {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  form input {
+    flex: 1;
+    width: 70%;
+  }
+
+  .items {
+    gap: 10px;
+  }
+
+  .card {
+    width: 120px;
+    padding: 15px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 250px;
+  }
+}
